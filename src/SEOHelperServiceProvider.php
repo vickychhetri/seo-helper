@@ -1,6 +1,6 @@
 <?php
 // src/SEOHelperServiceProvider.php
-namespace Vendor\SEOHelper;
+namespace Vickychhetri\SEOHelper;
 
 use Illuminate\Support\ServiceProvider;
 
