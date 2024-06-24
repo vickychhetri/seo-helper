@@ -93,6 +93,11 @@ Open Graph and Twitter Card Specific Setters
 
 - setImage(string $image): Set the image URL for Open Graph and Twitter Card.
 
+# Canonical URLs
+Define a default canonical URL or leave it as null for dynamic setting
+
+# Schema.org Markup
+An empty array initializes for dynamic addition of schema.org markup
 
 ## Customization
 
