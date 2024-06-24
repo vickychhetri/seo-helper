@@ -37,4 +37,36 @@ class SEOHelperServiceProvider extends ServiceProvider
         $loader->alias('SEOHelper', SEOHelperFacade::class);
 
     }
+    public function unregister()
+    {
+        // Delete the published config file
+        $this->deletePublishedFile(config_path('seo_helper.php'));
+
+        // Delete the published views directory
+        $this->deletePublishedDirectory(resource_path('views/seo_helper'));
+    }
+
+    protected function deletePublishedFile($path)
+    {
+        if (file_exists($path)) {
+            unlink($path);
+        }
+    }
+
+    protected function deletePublishedDirectory($path)
+    {
+        if (is_dir($path)) {
+            $files = new \RecursiveIteratorIterator(
+                new \RecursiveDirectoryIterator($path, \RecursiveDirectoryIterator::SKIP_DOTS),
+                \RecursiveIteratorIterator::CHILD_FIRST
+            );
+
+            foreach ($files as $fileinfo) {
+                $todo = ($fileinfo->isDir() ? 'rmdir' : 'unlink');
+                $todo($fileinfo->getRealPath());
+            }
+
+            rmdir($path);
+        }
+    }
 }
