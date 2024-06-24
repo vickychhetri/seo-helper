@@ -79,6 +79,8 @@ class SEOHelper
             'meta' => $this->meta,
             'openGraph' => $this->openGraph,
             'twitterCard' => $this->twitterCard,
+            'canonicalUrl' => $this->canonicalUrl,
+            'schemas' => $this->schemas,
         ])->render();
     }
 
