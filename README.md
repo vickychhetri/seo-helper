@@ -101,16 +101,6 @@ Customize default SEO settings by editing the seo_helper.php configuration file 
 ## Contributing
 
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
-We welcome contributions to SEO Helper! If you'd like to contribute, please follow these steps:
-
-
-1. Fork the repository on GitHub.
-2. Clone your forked repository (`git clone https://github.com/your-username/seo-helper.git`).
-3. Create a new branch for your feature or bug fix (`git checkout -b feature/awesome-feature`).
-4. Make changes and add tests if possible.
-5. Commit your changes (`git commit -am 'Add awesome feature'`).
-6. Push to the branch (`git push origin feature/awesome-feature`).
-7. Create a new Pull Request on GitHub.
 
 
 ## Issues
