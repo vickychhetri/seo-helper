@@ -74,23 +74,24 @@ In your Blade views, output the generated HTML using {!! !!} to render HTML cont
 `{!! $seoHtml !!}
 `
 
-Additional Methods
+## Additional Methods
+
 Individual Attribute Setters
 You can also set individual SEO attributes directly using these methods:
 
-setTitle(string $title): Set the page title.
+- setTitle(string $title): Set the page title.
 
-setDescription(string $description): Set the page description.
+- setDescription(string $description): Set the page description.
 
-setKeywords(string $keywords): Set the page keywords.
+- setKeywords(string $keywords): Set the page keywords.
 
 Open Graph and Twitter Card Specific Setters
 
-setUrl(string $url): Set the URL for Open Graph.
+- setUrl(string $url): Set the URL for Open Graph.
 
-setType(string $type): Set the type for Open Graph (e.g., article, website).
+- setType(string $type): Set the type for Open Graph (e.g., article, website).
 
-setImage(string $image): Set the image URL for Open Graph and Twitter Card.
+- setImage(string $image): Set the image URL for Open Graph and Twitter Card.
 
 
 ## Customization
