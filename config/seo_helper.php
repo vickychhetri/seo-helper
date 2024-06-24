@@ -1,5 +1,4 @@
 <?php
-
 // config/seo_helper.php
 return [
     'meta' => [
@@ -21,4 +20,7 @@ return [
         'description' => 'Default Twitter Description',
         'image' => null,
     ],
+    'canonical_url' => null, // Default canonical URL
+    'schemas' => [], // Default schema.org markup, empty array by default
 ];
+

@@ -8,6 +8,9 @@ class SEOHelper
     protected array $meta;
     protected array $openGraph;
     protected array $twitterCard;
+    protected ?string $canonicalUrl = null;
+    protected array $schemas;
+    protected array $metaTags;
 
     /**
      * Initialize the Meta Part from default config file
@@ -143,4 +146,99 @@ class SEOHelper
         $this->openGraph['image'] = $image;
         $this->twitterCard['image'] = $image;
     }
+
+    /**
+     * Set canonical URL
+     * A canonical URL is an HTML link element that helps search engines determine the preferred URL for a webpage when multiple URLs contain similar or duplicate content. It's crucial for SEO to avoid duplicate content issues and consolidate ranking signals to a single URL.
+     *
+     * @param string $url
+     * @return void
+     */
+    public function setCanonicalUrl(string $url): void
+    {
+        $this->canonicalUrl = $url;
+    }
+
+    /**
+     * Get Canonical URL
+     * @return string|null
+     */
+    public function getCanonicalUrl(): ?string
+    {
+        return $this->canonicalUrl;
+    }
+
+
+    /***
+     * Schema.org Markup Integration
+     *
+     * Schema.org markup helps search engines understand the content on your web pages better, potentially enhancing search results with rich snippets. Implement methods to set and manage structured data for various entities.
+     *
+     * @param string $type
+     * @param array $properties
+     * @return void
+     */
+    public function addSchema(string $type, array $properties): void
+    {
+        // Implement logic to add schema markup
+        $this->schemas[$type] = $properties;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSchemas(): array
+    {
+        return $this->schemas;
+    }
+
+    /***
+     * Meta Tag Management
+     * Extend meta tag management beyond basic metadata to include additional meta tags like author, publisher, robots directives, viewport settings, etc.
+     *
+     * Set Meta tags
+     * @param string $name
+     * @param string $content
+     * @return void
+     */
+    public function setMetaTag(string $name, string $content): void
+    {
+        // Implement logic to set meta tags
+        $this->metaTags[$name] = $content;
+    }
+
+    /**
+     * return all meta tags
+     * @return array
+     */
+    public function getMetaTags(): array
+    {
+        return $this->metaTags;
+    }
+
+
+    /**
+     * Dynamic Sitemap Generation
+       Automatically generate and manage XML sitemaps for better search engine crawling and indexing
+     * @param array $urls
+     * @return void
+     */
+    public function generateSitemap(array $urls): void
+    {
+        // Implement logic to generate sitemap XML
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>';
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+        foreach ($urls as $url) {
+            $xml .= '<url><loc>' . htmlspecialchars($url) . '</loc></url>';
+        }
+        $xml .= '</urlset>';
+
+        file_put_contents('sitemap.xml', $xml);
+    }
+
+
+
+
+
+
 }
