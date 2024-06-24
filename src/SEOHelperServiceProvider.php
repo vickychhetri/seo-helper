@@ -15,7 +15,7 @@ class SEOHelperServiceProvider extends ServiceProvider
 
         // Publish views
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/seo_helper'),
+            __DIR__.'/../resources/views' => resource_path('views/seo_helper'),
         ], 'views');
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'seo_helper');
