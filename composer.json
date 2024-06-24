@@ -23,6 +23,9 @@
         "laravel": {
             "providers": [
                 "Vickychhetri\\SEOHelper\\SEOHelperServiceProvider"
+            ],
+            "unregister": [
+                "Vickychhetri\\SEOHelper\\SEOHelperServiceProvider::unregister"
             ]
         }
     },
