@@ -99,6 +99,28 @@ Define a default canonical URL or leave it as null for dynamic setting
 # Schema.org Markup
 An empty array initializes for dynamic addition of schema.org markup
 
+`<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "",
+"image": "",  
+"author": {
+"@type": "",
+"name": ""
+},  
+"publisher": {
+"@type": "Organization",
+"name": "",
+"logo": {
+"@type": "ImageObject",
+"url": ""
+}
+},
+"datePublished": ""
+}
+</script>`
+
 ## Customization
 
 Customize default SEO settings by editing the seo_helper.php configuration file in your Laravel project.
