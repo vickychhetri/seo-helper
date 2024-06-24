@@ -10,11 +10,16 @@ class SEOHelperServiceProvider extends ServiceProvider
     {
         // Publish config file
         $this->publishes([
-            __DIR__ . '/../config/seo_helper.php' => config_path('seo_helper.php'),
-        ]);
+            __DIR__.'/../config/seo_helper.php' => config_path('seo_helper.php'),
+        ], 'config');
 
-        // Load views
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'seo_helper');
+        // Publish views
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/seo_helper'),
+        ], 'views');
+
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'seo_helper');
+
     }
 
     public function register()
