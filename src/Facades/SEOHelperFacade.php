@@ -1,7 +1,7 @@
 <?php
 
 // src/Facades/SEOHelperFacade.php
-namespace Vendor\SEOHelper\Facades;
+namespace Vickychhetri\SEOHelper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
