@@ -1,6 +1,8 @@
 <?php
 // config/seo_helper.php
 return [
+    'key-path' => 'C:\laragon\www\analytics\appme\projectvicky-0ef21a587443.json',
+    'property' => '286639741',
     'meta' => [
         'title' => 'Default Title',
         'description' => 'Default Description',
