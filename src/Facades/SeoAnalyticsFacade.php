@@ -5,10 +5,10 @@ namespace Vickychhetri\SEOHelper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class GAnalyticsFacade extends Facade
+class SeoAnalyticsFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'g_analytics_facade';
+        return 'seo_analytics_facade';
     }
 }

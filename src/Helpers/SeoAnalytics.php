@@ -1,7 +1,7 @@
 <?php
 
 namespace Vickychhetri\SEOHelper\Helpers;
-class GAnalytics implements IAnalytics
+class SeoAnalytics implements IAnalytics
 {
     private GoogleAnalyticsGA4 $ga;
     private mixed $propertyId;

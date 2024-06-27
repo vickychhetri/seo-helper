@@ -3,7 +3,7 @@
 namespace Vickychhetri\SEOHelper;
 
 use Illuminate\Support\ServiceProvider;
-use Vickychhetri\SEOHelper\Helpers\GAnalytics;
+use Vickychhetri\SEOHelper\Helpers\SeoAnalytics;
 
 class GAnalyticsServiceProvider extends ServiceProvider
 {
@@ -15,12 +15,12 @@ class GAnalyticsServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->app->singleton('g_analytics_facade', function () {
-            return new GAnalytics();
+        $this->app->singleton('seo_analytics_facade', function () {
+            return new SeoAnalytics();
         });
 
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        $loader->alias('GAnalytics', GAnalytics::class);
+        $loader->alias('SeoAnalytics', SeoAnalytics::class);
 
     }
 
