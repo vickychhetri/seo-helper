@@ -86,6 +86,7 @@ Once you have instantiated the object, you can call the method activeUserSession
 
 `$start_date = '2024-01-01';`
 `$endDate = '2024-06-30';`
+
 `$seoAnalytics->activeUserSessionCountyWise($start_date, $endDate);`
 
 ## Methods Available 
