@@ -80,7 +80,16 @@ In your Blade views, output the generated HTML using {!! !!} to render HTML cont
 Call the activeUserSessionCountyWise method: Once you have instantiated the object, you can call the method activeUserSessionCountyWise with the appropriate arguments ($start_date and $endDate):
 `$start_date = '2024-01-01'; // Example start date$endDate = '2024-06-30'; // Example end date$seoAnalytics->activeUserSessionCountyWise($start_date, $endDate);`
 
-## Methods Available - `activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. - `activeUserSessionCityWise($start_date, $end_date)`: Retrieves active user session data city-wise. - `activeUserSessionBrowserWise($start_date, $end_date)`: Retrieves active user session data browser-wise. - `activeUserSessionDeviceWise($start_date, $end_date)`: Retrieves active user session data device-wise. - `screenPageViews($start_date, $end_date)`: Retrieves screen page views data. - `topEvents($start_date, $end_date)`: Retrieves top events data. - `userTrending($start_date, $end_date)`: Retrieves trending user data. - `newUserCountry($start_date, $end_date)`: Retrieves new user data by country. - `sessionsCampaign($start_date, $end_date)`: Retrieves session data by campaign. - `userSessionRevenueCountry($start_date, $end_date)`: Retrieves user session revenue data by country.
+## Methods Available 
+-`activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. 
+- `activeUserSessionCityWise($start_date, $end_date)`: Retrieves active user session data city-wise. 
+-`activeUserSessionBrowserWise($start_date, $end_date)`: Retrieves active user session data browser-wise.
+ -`activeUserSessionDeviceWise($start_date, $end_date)`: Retrieves active user session data device-wise. 
+- `screenPageViews($start_date, $end_date)`: Retrieves screen page views data. - `topEvents($start_date, $end_date)`: Retrieves top events data.
+ - `userTrending($start_date, $end_date)`: Retrieves trending user data.
+ - `newUserCountry($start_date, $end_date)`: Retrieves new user data by country.
+ - `sessionsCampaign($start_date, $end_date)`: Retrieves session data by campaign.
+ - `userSessionRevenueCountry($start_date, $end_date)`: Retrieves user session revenue data by country.
 
 ## Additional Methods
 
