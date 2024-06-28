@@ -81,9 +81,9 @@ Call the activeUserSessionCountyWise method: Once you have instantiated the obje
 `$start_date = '2024-01-01'; // Example start date$endDate = '2024-06-30'; // Example end date$seoAnalytics->activeUserSessionCountyWise($start_date, $endDate);`
 
 ## Methods Available 
--`activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. 
+- `activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. 
 - `activeUserSessionCityWise($start_date, $end_date)`: Retrieves active user session data city-wise. 
--`activeUserSessionBrowserWise($start_date, $end_date)`: Retrieves active user session data browser-wise.
+- `activeUserSessionBrowserWise($start_date, $end_date)`: Retrieves active user session data browser-wise.
  -`activeUserSessionDeviceWise($start_date, $end_date)`: Retrieves active user session data device-wise. 
 - `screenPageViews($start_date, $end_date)`: Retrieves screen page views data. - `topEvents($start_date, $end_date)`: Retrieves top events data.
  - `userTrending($start_date, $end_date)`: Retrieves trending user data.
