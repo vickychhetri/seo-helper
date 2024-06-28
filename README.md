@@ -74,6 +74,10 @@ In your Blade views, output the generated HTML using {!! !!} to render HTML cont
 `{!! $seoHtml !!}
 `
 
+## config seo_helper
+
+`[ 'key-path' => 'path/to/projectvicky-0ef21a587443.json', 'property' => '2866XXXX', ];`
+
 ## Instantiate the SeoAnalytics object
 `$seoAnalytics = new SeoAnalytics();`
 
