@@ -84,7 +84,7 @@ Call the activeUserSessionCountyWise method: Once you have instantiated the obje
 - `activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. 
 - `activeUserSessionCityWise($start_date, $end_date)`: Retrieves active user session data city-wise. 
 - `activeUserSessionBrowserWise($start_date, $end_date)`: Retrieves active user session data browser-wise.
- -`activeUserSessionDeviceWise($start_date, $end_date)`: Retrieves active user session data device-wise. 
+ - `activeUserSessionDeviceWise($start_date, $end_date)`: Retrieves active user session data device-wise. 
 - `screenPageViews($start_date, $end_date)`: Retrieves screen page views data. - `topEvents($start_date, $end_date)`: Retrieves top events data.
  - `userTrending($start_date, $end_date)`: Retrieves trending user data.
  - `newUserCountry($start_date, $end_date)`: Retrieves new user data by country.
