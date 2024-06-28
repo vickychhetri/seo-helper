@@ -84,7 +84,9 @@ In your Blade views, output the generated HTML using {!! !!} to render HTML cont
 **Call the activeUserSessionCountyWise method:**
 Once you have instantiated the object, you can call the method activeUserSessionCountyWise with the appropriate arguments ($start_date and $endDate):
 
-`$start_date = '2024-01-01'; // Example start date$endDate = '2024-06-30'; // Example end date$seoAnalytics->activeUserSessionCountyWise($start_date, $endDate);`
+`$start_date = '2024-01-01';`
+`$endDate = '2024-06-30';`
+`$seoAnalytics->activeUserSessionCountyWise($start_date, $endDate);`
 
 ## Methods Available 
 - `activeUserSessionCountyWise($start_date, $end_date)`: Retrieves active user session data county-wise. 
